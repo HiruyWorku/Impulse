@@ -25,7 +25,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173", 
         "http://localhost:3000",
-        "https://impulse-0586zavrk-hiruyworkus-projects.vercel.app",  # Your actual Vercel URL
+        "https://impulse-gamma.vercel.app",  # Your exact Vercel URL
+        "https://impulse-0586zavrk-hiruyworkus-projects.vercel.app",
         "https://*.vercel.app",  # Allow all Vercel subdomains
         "https://*.onrender.com"  # Allow all Render subdomains
     ],

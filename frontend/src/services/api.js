@@ -3,6 +3,10 @@ import axios from 'axios';
 // Configure axios base URL
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
+// Debug logging
+console.log('API Base URL:', API_BASE_URL);
+console.log('Environment variables:', import.meta.env);
+
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
@@ -18,10 +22,13 @@ const api = axios.create({
 // Session Management
 export const startSession = async () => {
   try {
+    console.log('Attempting to start session at:', `${API_BASE_URL}/session/start`);
     const response = await api.post('/session/start');
+    console.log('Session started successfully:', response.data);
     return response.data;
   } catch (error) {
     console.error('Error starting session:', error);
+    console.error('Error details:', error.response?.data);
     throw new Error('Failed to start session');
   }
 };
