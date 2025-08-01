@@ -25,8 +25,9 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173", 
         "http://localhost:3000",
-        "https://your-vercel-app.vercel.app",  # Add your Vercel URL here
-        "https://impulse-frontend.vercel.app"  # Common Vercel URL pattern
+        "https://impulse-0586zavrk-hiruyworkus-projects.vercel.app",  # Your actual Vercel URL
+        "https://*.vercel.app",  # Allow all Vercel subdomains
+        "https://*.onrender.com"  # Allow all Render subdomains
     ],
     allow_credentials=True,
     allow_methods=["*"],
