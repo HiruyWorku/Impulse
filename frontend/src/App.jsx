@@ -3,6 +3,8 @@ import WelcomePage from './components/WelcomePage';
 import QuizInterface from './components/QuizInterface';
 import './App.css';
 
+// Impulse - AI-Enhanced Physics Study Companion (Deployment Ready)
+
 // Context for global state management
 const AppContext = createContext();
 
