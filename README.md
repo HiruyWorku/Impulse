@@ -16,7 +16,7 @@ impulse/
 - **Adaptive Quiz System**: Questions adjust difficulty based on performance
 - **Real-time Feedback**: Immediate correct/incorrect responses with explanations
 - **Motivation Nudges**: Encouraging messages based on user progress
-- **Performance Tracking**: Tracks user responses for adaptive learning
+- **Performance Tracking**: Tracks user responses for adaptive learning.
 
 ## Quick Start
 
